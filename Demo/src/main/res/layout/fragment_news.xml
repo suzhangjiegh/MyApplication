@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.szj.demo.frag.NewsFragment">
+
+    <com.gxz.PagerSlidingTabStrip
+        android:id="@+id/fg_news_tp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fg_news_tp"
+        android:textColor="@color/black"
+        app:pstsDividerColor="@color/light_blue"
+        app:pstsIndicatorColor="@color/light_blue"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsTextSelectedColor="@color/light_blue"
+        app:pstsUnderlineHeight="1dp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fg_news_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
